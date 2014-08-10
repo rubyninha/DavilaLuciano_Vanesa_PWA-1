@@ -40,16 +40,34 @@
             var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);
             var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);
 
-            console.log(f1);
-            console.log(f2);
+
+            //inflict damage
+            playerOneHealth-=f1;
+            playerTwoHealth-=f2;
+
+            console.log(playerOneName+":"+playerOneHealth+"  "+playerTwoName+":"+playerTwoHealth);
+
+            var result = winnerCheck();
+            console.log(result);
 
 
         };
     };
 
     function winnerCheck(){
-        //code will go here
+        console.log("in winnerCheck FN");
 
+        var result="no winner";
+
+        //Create conditional to determine if there is a winner or not
+        if (playerOneHealth<1 && playerTwoHealth<1){
+            result = "You Both Die";
+        } else if(playerOneHealth<1){
+            result =playerTwoName+" WINS!!!"
+        } else if (playerTwoHealth<1){
+            result = playerOneName+" WINS!!!"
+        };
+        return result;
     };
 
     //The program gets started below
