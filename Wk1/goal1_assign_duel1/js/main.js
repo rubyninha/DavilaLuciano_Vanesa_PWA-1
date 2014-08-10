@@ -26,4 +26,18 @@
     //initiate round
     var round=0;
 
+    function fight(){
+        //code will go here
+        winnerCheck()
+    };
+
+    function winnerCheck(){
+        //code will go here
+
+    };
+
+
+    //The program gets started below
+    fight();
+
 })();
