@@ -24,11 +24,10 @@
     var playerTwoHealth = 100;
 
     //initiate round
-    var round=0;
+    var round=1;
 
     function fight(){
-        //code will go here
-        winnerCheck()
+        console.log("in the fight function");
     };
 
     function winnerCheck(){
@@ -36,8 +35,8 @@
 
     };
 
-
     //The program gets started below
+    console.log("program starts here");
     fight();
 
 })();
