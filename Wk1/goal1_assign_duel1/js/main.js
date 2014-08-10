@@ -28,6 +28,13 @@
 
     function fight(){
         console.log("in the fight function");
+
+        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);
+
+        //Create for loop that will reduce the player's health for each round
+        for (var i = 0; i < 10; i++){
+            console.log(i);
+        };
     };
 
     function winnerCheck(){
