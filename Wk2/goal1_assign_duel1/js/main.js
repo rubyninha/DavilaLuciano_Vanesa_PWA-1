@@ -68,12 +68,12 @@
         var results="no winner";
 
         //Create conditional to determine if there is a winner or not
-        if (playerOneHealth<1 && playerTwoHealth<1){
+        if (fighter1[2]<1 && fighter2[2]<1){
             results = "You Both Die";
-        } else if(playerOneHealth<1){
-            results =playerTwoName+" WINS!!!"
-        } else if (playerTwoHealth<1){
-            results = playerOneName+" WINS!!!"
+        } else if(fighter1[2]<1){
+            results =fighter2[0]+" WINS!!!"
+        } else if (fighter2[2]<1){
+            results = fighter1[0]+" WINS!!!"
         };
         //Return the results
         return results;
