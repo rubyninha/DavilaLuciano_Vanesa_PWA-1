@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="281d67f9-330e-4337-a170-8d91afce6450" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wk1/goal3_assign_debug_v2/js/search.js" afterPath="$PROJECT_DIR$/Wk1/goal3_assign_debug_v2/js/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wk2/goal3_assign_debug_v2/js/search.js" afterPath="$PROJECT_DIR$/Wk2/goal3_assign_debug_v2/js/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DavilaLuciano_Vanesa_PWA-1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +28,11 @@
       <file leaf-file-name="search.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Wk2/goal3_assign_debug_v2/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7165605" vertical-offset="0" max-vertical-offset="2070">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.8121019" vertical-offset="510" max-vertical-offset="2070">
+              <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1408158445000" expanded="true" signature="2640:2655" placeholder="..." />
+                <marker date="1408158893000" expanded="true" signature="2654:2669" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -329,7 +327,7 @@
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1408158445000" expanded="true" signature="2640:2655" placeholder="..." />
+            <marker date="1408158893000" expanded="true" signature="2654:2669" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -445,11 +443,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Wk2/goal3_assign_debug_v2/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7165605" vertical-offset="0" max-vertical-offset="2070">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.8121019" vertical-offset="510" max-vertical-offset="2070">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1408158445000" expanded="true" signature="2640:2655" placeholder="..." />
+            <marker date="1408158893000" expanded="true" signature="2654:2669" placeholder="..." />
           </folding>
         </state>
       </provider>

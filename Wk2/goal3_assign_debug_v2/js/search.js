@@ -39,7 +39,7 @@
     };
 
     // Finds search matches
-    var search = function(query)
+    var search = function(query){
 
         // split the user's search query string into an array
         var queryArray = query.join(" ");
@@ -48,7 +48,7 @@
         var results = [];
 
         // loop through each index of db array
-        for(var i=0, j=db.length; i<j; i++){
+        for(var i=0, j=db.length; i<j; i++) {
 
             // each db[i] is a single video item, each title ends with a pipe "|"
             // save a lowercase variable of the video title
@@ -57,17 +57,17 @@
 
             // loop through the user's search query words
             // save a lowercase variable of the search keyword
-            for(var ii=0, jj=queryArray.length; ii<jj; ii++){
+            for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {
                 var qitem = queryArray[ii].tolowercase();
 
                 // is the keyword anywhere in the video title?
                 // If a match is found, push full db[i] into results array
                 var compare = dbitem.indexOf(qitem);
-                if(compare !== -1){
+                if (compare !== -1) {
                     results.push(db[i]);
                 };
-            ;
-        ;
+            };
+        };
 
         results.sort();
 
@@ -116,13 +116,13 @@
 
     // The onsubmit event will be reviewed in upcoming Course Material.
     // THE LINE DIRECTLY BELOW IS CORRECT
-    document.forms[0].onsubmit = function(){
+    document.forms[0].onsubmit = function() {
         var query = searchInput.value;
         validqte(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
         return false;
-        ;
+    };
 
 })();
