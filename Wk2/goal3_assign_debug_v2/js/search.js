@@ -17,28 +17,29 @@
     // Validates search query
     var validate = function(query){
 
+
         // Trim whitespace from start and end of search query
-        while(query.charAt(0) = " "){
+        while(query.charAt(0) === " "){
             query = query.substring(1, query.length);
         };
         while(query.charAt(query.length-1) === ""){
             query = query.substring(0, query.length-1);
-            ;
+        ;
 
-            // Check search length, must have 3 characters
-            if(query.length < 3){
-                alert("Your search query is too small, try again.);
+        // Check search length, must have 3 characters
+        if(query.length < 3){
+            alert("Your search query is too small, try again.");
 
-                // (DO NOT FIX THE LINE DIRECTLY BELOW)
-                searchInput.focus();
+            // (DO NOT FIX THE LINE DIRECTLY BELOW)
+            searchInput.focus();
                 return;
-            };
-
-            search(query);
         };
 
-        // Finds search matches
-        var search = function(query)
+        search(query);
+    };
+
+    // Finds search matches
+    var search = function(query)
 
         // split the user's search query string into an array
         var queryArray = query.join(" ");
@@ -65,63 +66,63 @@
                 if(compare !== -1){
                     results.push(db[i]);
                 };
-                ;
-                ;
+            ;
+        ;
 
-                results.sort();
+        results.sort();
 
-                // Check that matches were found, and run output functions
-                if(results.length = 0){
-                    noMatch();
-                }else{
-                    showMatches(results);
-                };
-            };
+        // Check that matches were found, and run output functions
+        if(results.length = 0){
+            noMatch();
+        }else{
+            showMatches(results);
+           };
+        };
 
-            // Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
-            var noMatch = function(){
-                var html = ''+
-                        '<p>No Results found.</p>'+
-                        '<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
+    // Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
+    var noMatch = function(){
+        var html = ''+
+            '<p>No Results found.</p>'+
+            '<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
                     ;
-                resultsDIV.innerHTML = html;
-            };
+            resultsDIV.innerHTML = html;
+    };
 
-            // Put matches into page as paragraphs with anchors
-            var showMatches = function(results){
+    // Put matches into page as paragraphs with anchors
+    var showMatches = function(results){
 
-                // THE NEXT 4 LINES ARE CORRECT.
-                var html = '<p>Results</p>',
+        // THE NEXT 4 LINES ARE CORRECT.
+        var html = '<p>Results</p>',
                     title,
                     url
                     ;
 
-                // loop through all the results search() function
-                for(var i=0, j=results.length; i<j; i++){
+        // loop through all the results search() function
+        for(var i=0, j=results.length; i<j; i++){
 
-                    // title of video ends with pipe
-                    // pull the title's string using index numbers
-                    titleEnd = results[i].indexOf('|');
-                    title = results[i].subString(0, titleEnd);
+            // title of video ends with pipe
+            // pull the title's string using index numbers
+            titleEnd = results[i].indexOf('|');
+            title = results[i].subString(0, titleEnd);
 
-                    // pull the video url after the title
-                    url = results[i].substring(results[i].indexOf('|')+1, results[i].length);
+            // pull the video url after the title
+            url = results[i].substring(results[i].indexOf('|')+1, results[i].length);
 
-                    // make the video link - THE NEXT LINE IS CORRECT.
-                    html += '<p><a href=' + url + '>' + title + '</a></p>';
-                };
-                resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
-            };
+            // make the video link - THE NEXT LINE IS CORRECT.
+            html += '<p><a href=' + url + '>' + title + '</a></p>';
+        };
+        resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
+    };
 
-            // The onsubmit event will be reviewed in upcoming Course Material.
-            // THE LINE DIRECTLY BELOW IS CORRECT
-            document.forms[0].onsubmit = function(){
-                var query = searchInput.value;
-                validqte(query);
+    // The onsubmit event will be reviewed in upcoming Course Material.
+    // THE LINE DIRECTLY BELOW IS CORRECT
+    document.forms[0].onsubmit = function(){
+        var query = searchInput.value;
+        validqte(query);
 
-                // return false is needed for most events - this will be reviewed in upcoming course material
-                // THE LINE DIRECTLY BELOW IS CORRECT
-                return false;
-                ;
+        // return false is needed for most events - this will be reviewed in upcoming course material
+        // THE LINE DIRECTLY BELOW IS CORRECT
+        return false;
+        ;
 
-            })();
+})();

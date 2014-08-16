@@ -31,7 +31,7 @@
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
-			return;
+			    return;
 		};
 		
 		search(query);
@@ -75,8 +75,8 @@
 			noMatch();
 		}else{
 			showMatches(results);
-		};
-	};
+		    };
+	    };
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
 	var noMatch = function(){
