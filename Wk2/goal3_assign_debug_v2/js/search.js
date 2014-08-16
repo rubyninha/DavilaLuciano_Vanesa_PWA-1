@@ -15,7 +15,7 @@
         ;
 
     // Validates search query
-    var validqte == function(query){
+    var validate = function(query){
 
         // Trim whitespace from start and end of search query
         while(query.charAt(0) = " "){
