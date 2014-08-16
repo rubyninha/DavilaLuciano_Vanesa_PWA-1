@@ -26,7 +26,7 @@
         console.log("FIGHT!!!");
 
         //Alert to players to start the game
-        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);
+        alert(fighter1[0] + ":" + fighter1[2] + "  *START*   " + fighter2[0] + ":" + fighter2[2]);
 
         //Create for loop that will reduce the player's health for each round
         for (var i = 0; i < 10; i++){
