@@ -6,7 +6,7 @@
  */
 
 // Create privatized scope using a self-executing function
-(function(){
+(function(){                    //Function that will create a search engine
 
     // Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
     var resultsDIV = document.getElementById("results"),
@@ -18,6 +18,7 @@
     var validate = function(query){
 
         // Trim whitespace from start and end of search query
+        //While loop - if query is empty, search will come back empty
         while(query.charAt(0) === " "){
             query = query.substring(1, query.length);
         };
@@ -25,7 +26,7 @@
             query = query.substring(0, query.length - 1);
         };
 
-        // Check search length, must have 3 characters
+        // Check search length, must have 3 characters. If it's less than three string characters, alert user to try again
         if(query.length < 3){
             alert("Your search query is too small, try again.");
 
@@ -41,6 +42,7 @@
     var search = function(query){
 
         // split the user's search query string into an array
+        //separate query into separate strings in order to have more extensive search results
         var queryArray = query.split(" ");
 
         // array to store matched results from database.js
@@ -71,15 +73,15 @@
         results.sort();
 
         // Check that matches were found, and run output functions
-        if(results.length = 0){
+        if(results.length = 0){         //if search has not matches, it will give message to user
             noMatch();
         }else{
-            showMatches(results);
+            showMatches(results);       //if search has matches, it will give user the results
         };
     };
 
     // Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
-    var noMatch = function(){
+    var noMatch = function(){           //Function to message user if no results
         var html = ''+
                 '<p>No Results found.</p>'+
                 '<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
@@ -88,7 +90,7 @@
     };
 
     // Put matches into page as paragraphs with anchors
-    var showMatches = function(results){
+    var showMatches = function(results){        //Function to give results to user
 
         // THE NEXT 4 LINES ARE CORRECT.
         var html = '<p>Results</p>',
