@@ -17,14 +17,13 @@
     // Validates search query
     var validate = function(query){
 
-
         // Trim whitespace from start and end of search query
         while(query.charAt(0) === " "){
             query = query.substring(1, query.length);
         };
-        while(query.charAt(query.length-1) === ""){
-            query = query.substring(0, query.length-1);
-        ;
+        while(query.charAt(query.length-1) === "") {
+            query = query.substring(0, query.length - 1);
+        };
 
         // Check search length, must have 3 characters
         if(query.length < 3){
@@ -32,7 +31,7 @@
 
             // (DO NOT FIX THE LINE DIRECTLY BELOW)
             searchInput.focus();
-                return;
+            return;
         };
 
         search(query);
@@ -42,7 +41,7 @@
     var search = function(query){
 
         // split the user's search query string into an array
-        var queryArray = query.join(" ");
+        var queryArray = query.split(" ");
 
         // array to store matched results from database.js
         var results = [];
@@ -76,16 +75,16 @@
             noMatch();
         }else{
             showMatches(results);
-           };
         };
+    };
 
     // Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
     var noMatch = function(){
         var html = ''+
-            '<p>No Results found.</p>'+
-            '<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
-                    ;
-            resultsDIV.innerHTML = html;
+                '<p>No Results found.</p>'+
+                '<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
+            ;
+        resultsDIV.innerHTML = html;
     };
 
     // Put matches into page as paragraphs with anchors
@@ -93,9 +92,9 @@
 
         // THE NEXT 4 LINES ARE CORRECT.
         var html = '<p>Results</p>',
-                    title,
-                    url
-                    ;
+            title,
+            url
+            ;
 
         // loop through all the results search() function
         for(var i=0, j=results.length; i<j; i++){
@@ -118,7 +117,7 @@
     // THE LINE DIRECTLY BELOW IS CORRECT
     document.forms[0].onsubmit = function() {
         var query = searchInput.value;
-        validqte(query);
+        validate(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
