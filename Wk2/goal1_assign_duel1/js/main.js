@@ -43,7 +43,7 @@
             fighter2[2]-=f2;
 
             //Print to console
-            console.log(playerOneName+":"+playerOneHealth+"  "+playerTwoName+":"+playerTwoHealth);
+            console.log(fighter1[2]+" "+fighter2[2];
 
             //Create  variable to give results
             var results = winnerCheck();
