@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="281d67f9-330e-4337-a170-8d91afce6450" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wk3/goal3_assign_debug_v2/js/search.js" afterPath="$PROJECT_DIR$/Wk3/goal3_assign_debug_v2/js/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DavilaLuciano_Vanesa_PWA-1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +28,11 @@
       <file leaf-file-name="search.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Wk3/goal3_assign_debug_v2/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6210191" vertical-offset="525" max-vertical-offset="2010">
-              <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.42993632" vertical-offset="825" max-vertical-offset="2040">
+              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1408750350000" expanded="false" signature="3128:3143" placeholder="..." />
+                <marker date="1408750607000" expanded="false" signature="3175:3190" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -73,7 +72,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1324" />
     <option name="y" value="22" />
-    <option name="width" value="1324" />
+    <option name="width" value="1078" />
     <option name="height" value="746" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -230,14 +229,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1324" y="22" width="1324" height="746" extended-state="6" />
+    <frame x="-1324" y="22" width="1078" height="746" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18495779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22800379" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -391,11 +390,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Wk3/goal3_assign_debug_v2/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6210191" vertical-offset="525" max-vertical-offset="2010">
-          <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.42993632" vertical-offset="825" max-vertical-offset="2040">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1408750350000" expanded="false" signature="3128:3143" placeholder="..." />
+            <marker date="1408750607000" expanded="false" signature="3175:3190" placeholder="..." />
           </folding>
         </state>
       </provider>

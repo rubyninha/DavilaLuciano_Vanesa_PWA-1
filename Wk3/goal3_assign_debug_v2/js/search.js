@@ -71,9 +71,10 @@
         };
 
         results.sort();
+        console.log("Here are the results");
 
         // Check that matches were found, and run output functions
-        if(results.length = 0){         //if search has not matches, it will give message to user
+        if(results.length === 0){         //if search has not matches, it will give message to user
             noMatch();
         }else{
             showMatches(results);       //if search has matches, it will give user the results
