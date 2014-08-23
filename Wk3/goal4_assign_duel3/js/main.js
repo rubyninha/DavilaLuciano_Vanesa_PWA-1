@@ -12,9 +12,11 @@
     //Print out to console the word FIGHT
     console.log("FIGHT!!!");
 
-    //Create array for players' names, damage points and health points
-    var fighter1 = ["Spiderman", 50, 100];      //Array for Fighter #1
-    var fighter2 = ["Batman", 50, 100];         //Array for Fighter #2
+    //Define the DOM pieces with getElementById
+    var fighter1_txt = document.querySelector("#spiderman").querySelector("p"); //variable for fighter 1
+    var fighter2_txt = document.querySelector("#batman").querySelector("p");    //variable for fighter 1
+    var round_txt = document.querySelector("h4");  //variable for rounds
+    var button = document.getElementById("fight_btn");  //variable for button
 
 
     //Create a variable to initiate round
