@@ -19,8 +19,30 @@
     var button = document.getElementById("fight_btn");  //variable for button
 
 
+    //Setup click event to replace pop-up window
+    button.addEventListener("click", fight, false); // Used Event Listener for flexibility
+
+    //Create array of object for both fighters
+    var fighters = [
+        {
+            name: "Spiderman",  //index0.name
+            damage:50,          //index0.damage
+            health:100          //index0.health
+        },
+        {
+            name:"Batman",      //index1.name
+            damage:50,          //index1.damage
+            health:100,         //index1.health
+        }
+    ]
+
     //Create a variable to initiate round
-    var round=0;
+    var round = 1;
+
+    //Initialize DOM innerHTML text for top of HTML page
+    round_txt.innerHTML = "Click FIGHT BUTTON to Start!";
+    fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
+    fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
 
     //Function to commence fighting
     function fight(){
