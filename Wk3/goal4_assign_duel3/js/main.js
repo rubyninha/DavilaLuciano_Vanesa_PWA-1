@@ -69,7 +69,7 @@
             //Print out results to console
             console.log(result);
 
-            //Create conditional 
+            //Create conditional
             round_txt.innerHTML = "ROUND #" + round + " Results:";
             round++;
 
