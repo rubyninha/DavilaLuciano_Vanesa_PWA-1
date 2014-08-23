@@ -53,7 +53,7 @@
         fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
         fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
 
-            //random formula is - Math.floor(Math.random() * (max - min) + min);
+            //random formula to determine damage);
             var f1 = Math.floor(Math.random() * fighters[0].damage + fighters[0].damage *.5);
             var f2 = Math.floor(Math.random() * fighters[1].damage + fighters[1].damage *.5);
 
@@ -103,10 +103,10 @@
             result = fighters[1].name + " WINS!!!"
         } else if (fighters[1].health < 1){
             result = fighters[0].name + " WINS!!!"
-        };
+        }
         //Return the results
         return result;
-    };
+    }
 
 
 })();
