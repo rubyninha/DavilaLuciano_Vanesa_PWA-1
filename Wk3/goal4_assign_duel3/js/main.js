@@ -65,17 +65,28 @@
             console.log(fighters[0].health, fighters[1].health);
 
             //Create  variable to give results
-            var results = winnerCheck();
+            var result = winnerCheck();
             //Print out results to console
-            console.log(results);
+            console.log(result);
+
             //Create conditional to determine the winner after the 10th round
-            if (results==="no winner"){
-                round++;
-                //Alert players results on each round
-                alert(fighter1[0]+":"+fighter1[2]+"  *ROUND "+round+" OVER"+"*  "+fighter2[0]+":"+fighter2[2]);
+            round_txt.innerHTML = "ROUND #" + round + " Results:";
+            round++;
+
+            if (result === "no winner"){
+                //Remove alert
+                //alert(fighter1[0]+":"+fighter1[2]+"  *ROUND "+round+" OVER"+"*  "+fighter2[0]+":"+fighter2[2]);
+                fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
+                fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
+
             }else {
-                alert(results);
-                break;
+                fighter1_txt.innerHTML = result;
+                fighter2_txt.innerHTML = "";
+
+                //Disable button
+                button.removeEventListener("click", fight, false);
+
+                document.querySelector(".buttonblue").innerHTML = "DONE!!!";
             };
     };
 
