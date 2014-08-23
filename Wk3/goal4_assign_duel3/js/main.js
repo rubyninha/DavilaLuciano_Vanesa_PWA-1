@@ -33,8 +33,7 @@
             name:"Batman",      //index1.name
             damage:50,          //index1.damage
             health:100,         //index1.health
-        }
-    ]
+        }];
 
     //Create a variable to initiate round
     var round = 1;
@@ -47,10 +46,12 @@
     //Function to commence fighting
     function fight(){
         //Print "Fight" to console
-        console.log("FIGHT!!!");
+        //console.log("FIGHT!!!");
 
-        //Alert to players to start the game
-        alert(fighter1[0] + ":" + fighter1[2] + "  *START*   " + fighter2[0] + ":" + fighter2[2]);
+        //Replace ALERT with innerHTML
+        //alert(fighter1[0] + ":" + fighter1[2] + "  *START*   " + fighter2[0] + ":" + fighter2[2]);
+        fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
+        fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
 
         //Create for loop that will reduce the player's health for each round
         for (var i = 0; i < 10; i++){
