@@ -53,9 +53,6 @@
         fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
         fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
 
-        //Create for loop that will reduce the player's health for each round
-        for (var i = 0; i < 10; i++){
-
             //random formula is - Math.floor(Math.random() * (max - min) + min);
             var f1 = Math.floor(Math.random() * fighters[0].damage + fighters[0].damage *.5);
             var f2 = Math.floor(Math.random() * fighters[1].damage + fighters[1].damage *.5);
