@@ -32,7 +32,7 @@
         {
             name:"Batman",      //index1.name
             damage:50,          //index1.damage
-            health:100,         //index1.health
+            health:100         //index1.health
         }];
 
     //Create a variable to initiate round
@@ -94,22 +94,19 @@
         console.log("in winnerCheck FN");
 
         //Create variable if there is no winner
-        var results="no winner";
+        var result ="no winner";
 
         //Create conditional to determine if there is a winner or not
-        if (fighter1[2]<1 && fighter2[2]<1){
-            results = "You Both Die";
-        } else if(fighter1[2]<1){
-            results =fighter2[0]+" WINS!!!"
-        } else if (fighter2[2]<1){
-            results = fighter1[0]+" WINS!!!"
+        if (fighters[0].health < 1 && fighters[1].health < 1){
+            result = "You Both Die - GAME OVER!";
+        } else if(fighters[0].health < 1){
+            result = fighters[1].name + " WINS!!!"
+        } else if (fighters[1].health < 1){
+            result = fighters[0].name + " WINS!!!"
         };
         //Return the results
-        return results;
+        return result;
     };
 
-    //The program gets started below
-    console.log("program starts here");
-    fight();
 
 })();
