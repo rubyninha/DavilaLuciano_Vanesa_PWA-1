@@ -69,7 +69,7 @@
             //Print out results to console
             console.log(result);
 
-            //Create conditional to determine the winner after the 10th round
+            //Create conditional 
             round_txt.innerHTML = "ROUND #" + round + " Results:";
             round++;
 
